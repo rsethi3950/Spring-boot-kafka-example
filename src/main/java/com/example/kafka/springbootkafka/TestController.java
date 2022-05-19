@@ -18,7 +18,7 @@ public class TestController {
     public void messageToTopic(@RequestParam("message") String message){
 
         this.producer.sendMessage(message);
-
+        return "Published successfully";
 
     }
 }
